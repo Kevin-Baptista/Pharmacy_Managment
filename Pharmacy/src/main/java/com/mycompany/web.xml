@@ -1,0 +1,20 @@
+<filter>
+    <filter-name>WebsiteApplication</filter-name>
+    <filter-class>
+        org.apache.wicket.protocol.http.WicketFilter
+    </filter-class>
+    <init-param>
+        <param-name>applicationClassName</param-name>
+        <param-value>
+            com.mycompany.wicket.WebsiteApplication
+        </param-value>
+    </init-param>
+    <init-param>
+        <param-name>debug</param-name>
+        <param-value>2</param-value>
+    </init-param>
+</filter>
+<filter-mapping>
+    <filter-name>WebsiteApplication</filter-name>
+    <url-pattern>/wicket/website/*</url-pattern>
+</filter-mapping>
