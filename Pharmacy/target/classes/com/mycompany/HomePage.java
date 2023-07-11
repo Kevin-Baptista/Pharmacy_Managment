@@ -7,6 +7,7 @@ import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
+import org.apache.wicket.markup.html.link.BookmarkablePageLink;
 
 @RegisterForReflection
 public class HomePage extends WebPage {
@@ -17,13 +18,10 @@ public class HomePage extends WebPage {
 	private MyComponent myComponent;
 
 	public HomePage() {
-		final var version = getApplication().getFrameworkSettings().getVersion();
-		final var versionLabel = new Label("version", version);
 
-		add(versionLabel);
-
-		final var hello = new Label("hello", myComponent.sayHello("Kevin"));
-		add(hello);
+		add(new BookmarkablePageLink("homeLink", Home.class));
+		add(new BookmarkablePageLink("servicesLink", Services.class));
+		add(new BookmarkablePageLink("aboutUsLink", AboutUs.class));
 	}
 
 }

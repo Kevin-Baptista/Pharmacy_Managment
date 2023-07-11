@@ -1,6 +1,6 @@
 package com.mycompany;
 
-public class Home extends WebSite {
+public class Home extends HomePage {
     public Home() {
         super();
     }

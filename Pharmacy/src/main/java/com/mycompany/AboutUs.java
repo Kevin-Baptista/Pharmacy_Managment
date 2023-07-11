@@ -1,7 +1,7 @@
 package com.mycompany;
 
 public class AboutUs extends
-        WebSite{
+        HomePage{
     public AboutUs(){
         super();
     }

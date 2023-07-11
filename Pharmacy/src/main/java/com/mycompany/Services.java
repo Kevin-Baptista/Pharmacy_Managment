@@ -1,7 +1,7 @@
 package com.mycompany;
 
 public class Services extends
-        WebSite{
+        HomePage{
     public Services(){
         super();
     }

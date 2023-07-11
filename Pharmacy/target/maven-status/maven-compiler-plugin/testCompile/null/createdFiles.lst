@@ -1,7 +1,3 @@
-org/acme/service/MedicamentService.class
-org/acme/repository/MedicamentRepository.class
-org/acme/ExampleResourceTest.class
 META-INF/panache-archive.marker
-org/acme/entity/Medicament.class
+org/acme/ExampleResourceTest.class
 org/acme/NativeExampleResourceIT.class
-org/acme/controler/MedicamentControler.class
